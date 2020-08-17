@@ -1,0 +1,55 @@
+<div class="container" dir="rtl">
+  <form  (submit)="submitForm()">
+
+      <div class="row">
+
+          <div class="form-group col-md-12">
+              <label>عنوان: </label>
+              <input type="text" name="title"  class="form-control"  [(ngModel)]="slideShow.title">
+          </div>
+
+          <div class="form-group col-md-12">
+            <label>توضیحات: </label>
+            <input type="text" name="description"  class="form-control" [(ngModel)]="slideShow.description">
+          </div>
+
+
+
+
+
+
+          <div class="form-group col-md-4">
+            <label> دسته بندی اصلی را انتخاب نمایید: </label>
+            <select class="form-control"  name="mainCategory" [(ngModel)]="slideShow.mainCategoryId" >
+
+              <option *ngFor="let mainCategory of mainCategoryList" style="font-weight: bolder" [value]="mainCategory.id">
+                  {{mainCategory.title}}
+              </option>
+            </select>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="form-group col-md-12">
+            <label> تصویر دسته بندی را انتخاب کنید: </label>
+            <input type="file" name="image" accept="image/*" class="form-control" (change)="onSelecetFile($event)">
+          </div>
+
+          <div class="form-group row">
+            <input type="submit" class="btn btn-success btn-block" value="ثبت">
+          </div>
+      </div>
+
+
+
+  </form>
+
+
+
+</div>
+<app-slide-show-list [newSlideShow]=newSlideShow></app-slide-show-list>

@@ -1,0 +1,52 @@
+
+
+          <div class="content" >
+						<!-- store products -->
+						<div class="row"   >
+              <!-- product -->
+              <ng-container *ngFor="let product of productList; let i= index;">
+                <div class="col-md-4 col-xs-6">
+                  <div class="product" style="min-height: 500px;">
+                    <div class="product-img">
+                      <img src={{imagePath+product.mainImage.id}} style="width: 70%; max-height: 200px; min-height: 200px;" alt="">
+                      <div class="product-label">
+
+                        <span class="new"> <b>جدید</b> </span>
+                      </div>
+                    </div>
+                    <div style="padding:40px;">
+
+                    </div>
+                    <div class="product-body" style="margin-bottom: 40px;">
+                      <p class="product-category">{{product.mainCategory.title}}</p>
+                      <h3 class="product-name"><a href="#">{{product.title}}</a></h3>
+                      <h4 class="product-price" dir="ltr">{{product.minCost  +' - '+product.maxCost  | perNumber}}</h4>
+                      <h3 class="product-name">حداقل سفارش:{{product.minOrder | perNumber}}</h3>
+                      <h3 class="product-name">واحد سفارش:{{product.productUnit}}</h3>
+                      <div class="product-btns">
+                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">اضافه کردن به پسندها</span></button>
+                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">مشاهده اطلاعات محصول</span></button>
+                      </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                      <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>سفارش</button>
+                      <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>استعلام</button>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+
+							<!-- /product -->
+
+
+						</div>
+						<!-- /store products -->
+
+
+          </div>
+
+          <div  class="panel panel-default text-center" style="padding: 10px;margin-top: 60px ;background-color:#333;border-radius: 2px;" (click)="pageableClick()">
+            <span  style="cursor: pointer; color: white">نمایش کالاهای بیشتر</span>
+          </div>
+

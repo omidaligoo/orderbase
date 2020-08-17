@@ -1,0 +1,142 @@
+<div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
+  <ul class="navigation-left">
+      <li class="nav-item " data-item="companies">
+          <a class="nav-item-hold" href="#">
+              <i class="nav-icon i-Bar-Chart"></i>
+              <span class="nav-text">Dashboard</span>
+          </a>
+          <div class="triangle"></div>
+      </li>
+      <li class="nav-item active" data-item="basicInformation">
+          <a class="nav-item-hold" href="#">
+              <i class="nav-icon i-Library"></i>
+              <span class="nav-text">UI kits</span>
+          </a>
+          <div class="triangle"></div>
+      </li>
+      <li class="nav-item" data-item="categories">
+          <a class="nav-item-hold" href="#">
+              <i class="nav-icon i-Suitcase"></i>
+              <span class="nav-text">Extra kits</span>
+          </a>
+          <div class="triangle"></div>
+      </li>
+      <li class="nav-item" data-item="advertising">
+          <a class="nav-item-hold" href="#">
+              <i class="nav-icon i-Computer-Secure"></i>
+              <span class="nav-text">Apps</span>
+          </a>
+          <div class="triangle"></div>
+      </li>
+
+
+
+
+      <!-- <li class="nav-item">
+          <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
+              <i class="nav-icon i-Safe-Box1"></i>
+              <span class="nav-text">Doc</span>
+          </a>
+          <div class="triangle"></div>
+      </li> -->
+  </ul>
+</div>
+<div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
+  <i class="sidebar-close i-Close" ></i>
+  <header>
+      <div class="logo">
+          <img src="../../dist-assets/images/logo-text.png" alt="">
+      </div>
+  </header>
+  <!-- Submenu Dashboards -->
+  <div class="submenu-area" data-parent="companies">
+      <header>
+          <h6>شرکت های پخش</h6>
+          <p>مدیریت کلیه فعالیت های مربوط به شرکت پخش</p>
+      </header>
+      <ul class="childNav">
+          <li class="nav-item" >
+              <a routerLink="dashboard/create" routerLinkActive="active" >
+                  <i class="nav-icon i-Clock-3"></i>
+                  <span class="item-name">
+                    ثبت نام شرکت های پخش
+                  </span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="dashboard2.html">
+                  <i class="nav-icon i-Clock-4"></i>
+                  <span class="item-name">
+                    لیست شرکت های پخش
+                  </span>
+              </a>
+          </li>
+
+      </ul>
+  </div>
+  <div class="submenu-area" data-parent="basicInformation">
+      <header>
+          <h6>اطلاعات پایه</h6>
+          <p>ایجاد و تغییر اطلاعات پایه سیستم</p>
+      </header>
+      <ul class="childNav">
+          <li class="nav-item">
+              <a routerLink="dashboard/create-city" routerLinkActive="active">
+                  <i class="nav-icon i-File-Clipboard-Text--Image"></i>
+                  <span class="item-name"> ایجاد شهر</span>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="submenu-area" data-parent="categories">
+      <header>
+          <h6>گروهبندی ها</h6>
+          <p>ایجاد و مدیریت دسته بندی های مربوط به پروژه</p>
+      </header>
+      <ul class="childNav">
+          <li class="nav-item">
+            <a routerLink="dashboard/create-job-category" routerLinkActive="active" >
+                  <i class="nav-icon i-Add-File"></i>
+                  <span class="item-name">دسته بندی  شغلی</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="dashboard/create-main-category" routerLinkActive="active" >
+                  <i class="nav-icon i-Email"></i>
+                  <span class="item-name">دسته بندی اصلی</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="dashboard/create-sub-category" routerLinkActive="active" >
+                  <i class="nav-icon i-Speach-Bubble-3"></i>
+                  <span class="item-name">زیر دسته بندی</span>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="submenu-area" data-parent="advertising">
+      <header>
+          <h6>تبلیغات</h6>
+          <p>قسمت ایجاد و مدیریت تبلیغات</p>
+      </header>
+      <ul class="childNav">
+          <li class="nav-item">
+            <a routerLink="dashboard/create-slide-show" routerLinkActive="active" >
+                  <i class="nav-icon i-Crop-2"></i>
+                  <span class="item-name">اسلاید شو</span>
+              </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="dashboard/create-advertising" routerLinkActive="active" >
+                  <i class="nav-icon i-Loading-3"></i>
+                  <span class="item-name">تبلیغات</span>
+              </a>
+          </li>
+
+      </ul>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,51 @@
+<div class="container" dir="rtl">
+
+
+  <form  (submit)="submitForm()">
+
+      <div class="row">
+
+        <div class="form-group col-md-12">
+          <label> دسته بندی شغل را انتخاب نمایید: </label>
+          <ng-multiselect-dropdown name="jobCategoryList"
+          [placeholder]="'انتخاب دسته بندی'"
+          [settings]="dropdownSettings"
+          [data]="dropdownList"
+          [(ngModel)]="selectedItems"
+          (onSelect)="onItemSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelect)="onItemDeSelect($event)"
+          (onDeSelectAll)="onItemDeSelectAll($event)"
+        >
+        </ng-multiselect-dropdown>
+        </div>
+
+          <div class="form-group col-md-12">
+              <label>  نام دسته بندی اصلی را وراد کنید:</label>
+              <input type="text" name="title"  class="form-control" [(ngModel)]="mainCategory.title">
+          </div>
+          <div class="form-group col-md-12">
+            <label> توضیحات دسته بندی اصلی را وارد کنید:  </label>
+            <input type="text" name="description"  class="form-control" [(ngModel)]="mainCategory.description">
+          </div>
+          <div class="form-group col-md-12">
+            <label> تصویر دسته بندی را انتخاب کنید: </label>
+            <input type="file" name="image" accept="image/*" class="form-control" (change)="onSelecetFile($event)">
+          </div>
+
+
+
+
+          <div class="form-group row">
+            <input type="submit" class="btn btn-success btn-block" value="ثبت">
+          </div>
+      </div>
+
+
+
+  </form>
+
+
+
+</div>
+<app-main-category-list [newMainCategory]="newMainCategory"></app-main-category-list>

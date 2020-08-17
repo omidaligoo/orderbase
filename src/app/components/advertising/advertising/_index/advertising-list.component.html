@@ -1,0 +1,45 @@
+
+<div class="container" dir="rtl">
+  <div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">عنوان تبلیغ</th>
+                <th scope="col">توضیحات تبلیغ</th>
+                <th scope="col">گروه بندی اصلی </th>
+                <th scope="col">گروه بندی فرعی </th>
+                <th scope="col">شهر </th>
+                <th scope="col">وضعیت</th>
+                <th scope="col">عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let advertising of advertisingList; let i= index;">
+                <th scope="row">{{+i+1}}</th>
+                <td>{{advertising.title}}</td>
+                <td> {{advertising.description}}</td>
+                <td> {{advertising.mainCategoryId}}</td>
+                <td> {{advertising.subCategoryId}}</td>
+                <td> {{advertising.cityList}}</td>
+
+                <ng-container *ngIf="advertising.status == true">
+                  <td><span class="badge badge-success">فعال</span></td>
+                </ng-container>
+
+                <ng-container *ngIf="advertising.status == false">
+                  <td><span class="badge badge-danger">غیر فعال</span></td>
+                </ng-container>
+
+                <td>
+                    <button class="btn btn-success" type="button" (click)="setOneStatusTrue(advertising)">فعال کردن </button>
+                    <button class="btn btn-danger" type="button" (click)="setOneStatusFalse(advertising)">غیر فعال کردن</button>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,59 @@
+<div class="navigation-wrap bg-light start-header start-style" dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-right">
+
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto py-4 py-md-0">
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 " style="margin-top: 15px;">
+                <h6>انتخاب دسته بندی اصلی:</h6>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                <div class="circle image-wrap small">
+                  <img src="http://fc05.deviantart.net/fs71/f/2013/148/f/4/f4092e9cac2e34e6a147de8278959f3c-d66wq81.jpg">
+                </div>
+                <a class="nav-link" href="#">خانه</a>
+              </li>
+
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 " *ngFor="let mainCategory of mainCategoryList; let i= index;" >
+                <div class="circle image-wrap small">
+                  <img src="{{imagePath+mainCategory.image.id}}">
+                </div>
+                <a  (click)="selecteMainCategory(mainCategory)" class="nav-link" >{{mainCategory.title}}</a>
+              </li>
+
+
+
+
+
+            </ul>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section" dir="rtl">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">{{selectedMainCategory.title}}</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="#">{{selectedMainCategory.description}}</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->

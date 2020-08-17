@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /gull/dist-assets/js/plugins</title>
+ </head>
+ <body>
+<h1>Index of /gull/dist-assets/js/plugins</h1>
+  <table>
+   <tr><th valign="top">&nbsp;</th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=D">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="/gull/dist-assets/js/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="cropper.min.js">cropper.min.js</a>         </td><td align="right">2019-01-01 05:25  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="datatables.min.js">datatables.min.js</a>      </td><td align="right">2019-01-01 05:25  </td><td align="right">3.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="dropzone.min.js">dropzone.min.js</a>        </td><td align="right">2019-01-01 05:25  </td><td align="right"> 72K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="echarts.min.js">echarts.min.js</a>         </td><td align="right">2019-01-01 05:25  </td><td align="right">727K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="hopscotch.min.js">hopscotch.min.js</a>       </td><td align="right">2019-01-01 05:25  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="jquery-3.3.1.min.js">jquery-3.3.1.min.js</a>    </td><td align="right">2019-01-01 05:25  </td><td align="right"> 85K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="ladda.js">ladda.js</a>               </td><td align="right">2019-01-01 05:25  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="ladda.min.js">ladda.min.js</a>           </td><td align="right">2019-01-01 05:25  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="nuslider.min.js">nuslider.min.js</a>        </td><td align="right">2019-01-01 05:25  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="parsley.js">parsley.js</a>             </td><td align="right">2019-01-01 05:25  </td><td align="right"> 91K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="parsley.min.js">parsley.min.js</a>         </td><td align="right">2019-01-01 05:25  </td><td align="right"> 91K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="perfect-scrollbar.min.js">perfect-scrollbar.mi..&gt;</a></td><td align="right">2019-01-01 05:25  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="popper.min.js">popper.min.js</a>          </td><td align="right">2019-01-01 05:25  </td><td align="right"> 20K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="quill.min.js">quill.min.js</a>           </td><td align="right">2019-01-01 05:25  </td><td align="right">312K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="spin.min.js">spin.min.js</a>            </td><td align="right">2019-01-01 05:25  </td><td align="right">4.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="sweetalert2.min.js">sweetalert2.min.js</a>     </td><td align="right">2019-01-01 05:25  </td><td align="right"> 20K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="tagging.min.js">tagging.min.js</a>         </td><td align="right">2019-01-01 05:25  </td><td align="right">5.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="feather.min.js">feather.min.js</a>         </td><td align="right">2019-02-13 07:56  </td><td align="right"> 65K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="apexcharts.dataseries.js">apexcharts.dataserie..&gt;</a></td><td align="right">2019-04-01 03:37  </td><td align="right"> 59K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="apexcharts.dataseries.min.js">apexcharts.dataserie..&gt;</a></td><td align="right">2019-04-01 03:37  </td><td align="right"> 59K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="apexcharts.min.js">apexcharts.min.js</a>      </td><td align="right">2019-04-10 02:56  </td><td align="right">538K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="bootstrap.bundle.min.js">bootstrap.bundle.min.js</a></td><td align="right">2019-05-12 00:39  </td><td align="right"> 69K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="bootstrap.js">bootstrap.js</a>           </td><td align="right">2019-05-12 00:39  </td><td align="right">121K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="bootstrap.min.js">bootstrap.min.js</a>       </td><td align="right">2019-05-12 00:39  </td><td align="right">121K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="jquery.smartWizard.min.js">jquery.smartWizard.m..&gt;</a></td><td align="right">2019-05-12 00:39  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="toastr.min.js">toastr.min.js</a>          </td><td align="right">2019-05-12 00:39  </td><td align="right">7.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="metisMenu.min.js">metisMenu.min.js</a>       </td><td align="right">2019-09-22 02:53  </td><td align="right">4.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="dragula.min.js">dragula.min.js</a>         </td><td align="right">2019-11-10 18:57  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="todo-list.min.js">todo-list.min.js</a>       </td><td align="right">2019-11-10 18:57  </td><td align="right">3.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="jstree.min.js">jstree.min.js</a>          </td><td align="right">2019-11-17 02:57  </td><td align="right">136K</td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="calendar/">calendar/</a>              </td><td align="right">2020-01-06 01:13  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top">&nbsp;</td><td><a href="pickadate/">pickadate/</a>             </td><td align="right">2020-01-06 01:13  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache Server at demos.ui-lib.com Port 80</address>
+</body></html>

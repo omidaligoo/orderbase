@@ -1,0 +1,33 @@
+<div id="category-container" class="navigation-wrap" style="display: flex;overflow-x: scroll;"  dir="rtl">
+
+    <div (click)="selecteMainCategory(mainCategory)" class='img-container' style="margin: 20px;" *ngFor="let mainCategory of mainCategoryList; let i= index;" >
+      <img src="{{imagePath+mainCategory.image.id}}" style="max-height: 80px">
+      <h6 style="margin-top: 15px;">{{mainCategory.title}}</h6>
+    </div>
+
+
+</div>
+
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section" dir="rtl">
+			<!-- container -->
+			<div class="container">
+        <!-- row -->
+
+				<div class="row" >
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">{{selectedMainCategory.title}}</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="#">{{selectedMainCategory.description}}</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+    <!-- /BREADCRUMB -->
+
+

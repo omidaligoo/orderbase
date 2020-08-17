@@ -1,0 +1,65 @@
+<p>company-create works!</p>
+<div class="container" dir="rtl">
+    <form  (submit)="submitForm()">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>شماره موبایل</label>
+            <input type="text" name="mobile"  class="form-control" [(ngModel)]="user.mobile">
+          </div>
+        </div>
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label> نام</label>
+                <input type="text" name="firstName"  class="form-control" [(ngModel)]="user.firstName">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label> نام خانوادگی</label>
+                <input type="text" name="lastName"  class="form-control" [(ngModel)]="user.lastName">
+            </div>
+            <div class="form-group col-md-4">
+                <label> نام شرکت</label>
+                <input type="text" name="jobName"  class="form-control" [(ngModel)]="user.jobName">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>شهر استقرار شرکت پخش</label>
+              <select class="form-control"  name="city" [(ngModel)]="user.city">
+
+                <option *ngFor="let city of cityList" style="font-weight: bolder" [value]="city.id">
+                    {{city.title}}
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label>آدرس شرکت </label>
+                <input type="text" name="addr"  class="form-control" [(ngModel)]="user.addr">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label> لیست شهرهای پخش </label>
+              <ng-multiselect-dropdown name="jobCategoryList"
+              [placeholder]="'انتخاب شهرها'"
+              [settings]="dropdownSettings"
+              [data]="dropdownList"
+              [(ngModel)]="selectedItems"
+              (onSelect)="onItemSelect($event)"
+              (onSelectAll)="onSelectAll($event)"
+              (onDeSelect)="onItemDeSelect($event)"
+              (onDeSelectAll)="onItemDeSelectAll($event)"
+            >
+            </ng-multiselect-dropdown>
+            </div>
+
+            <div class="form-group row">
+              <input type="submit" class="btn btn-success btn-block" value="ثبت">
+            </div>
+
+        </div>
+
+
+
+    </form>
+</div>

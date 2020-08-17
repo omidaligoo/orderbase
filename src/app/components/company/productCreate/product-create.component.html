@@ -1,0 +1,87 @@
+<div class="container" dir="rtl">
+  <form  (submit)="submitForm()">
+
+      <div class="row">
+
+          <div class="form-group col-md-6">
+              <label>  نام محصول را وارد کنید:</label>
+              <input type="text" name="title"  class="form-control" [(ngModel)]="product.title">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label>حداقل سفارش:</label>
+            <input type="text" name="minOrder"  class="form-control" [(ngModel)]="product.minOrder">
+          </div>
+
+          <div class="form-group col-md-12">
+            <label> توضیحات محصول را وارد کنید:  </label>
+            <input type="text" name="description"  class="form-control" [(ngModel)]="product.description">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label>کف قیمت:</label>
+            <input type="text" name="minCost"  class="form-control" [(ngModel)]="product.minCost">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label>سقف قیمت:</label>
+            <input type="text" name="maxCost"  class="form-control" [(ngModel)]="product.maxCost">
+          </div>
+
+
+
+          <div class="form-group col-md-4">
+            <label>واحد:</label>
+            <select class="form-control"  name="mainCategoryId" [(ngModel)]="product.productUnit">
+
+              <option value="UNIT">
+                عدد
+              </option>
+              <option value="BOX">
+                کارتن
+              </option>
+              <option value="PALLET">
+                پالت
+              </option>
+            </select>
+          </div>
+
+
+          <div class="form-group col-md-4">
+            <label> دسته بندی اصلی را انتخاب نمایید: </label>
+            <select class="form-control"  name="mainCategoryId" [(ngModel)]="product.mainCategoryId" (change)="clearFilter()">
+
+              <option *ngFor="let mainCategory of mainCategoryList" style="font-weight: bolder" [value]="mainCategory.id">
+                  {{mainCategory.title}}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label> دسته بندی فرعی را انتخاب نمایید: </label>
+            <select class="form-control"  name="mainCategoryId" [(ngModel)]="product.subCategoryId" >
+
+              <option *ngFor="let subCategory of subCategoryList" style="font-weight: bolder" [value]="subCategory.id">
+                  {{subCategory.title}}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label> تصویر محصول را انتخاب کنید: </label>
+            <input type="file" name="image" accept="image/*" class="form-control" (change)="onSelecetFile($event)">
+          </div>
+
+
+          <div class="form-group row">
+            <input type="submit" class="btn btn-success btn-block" value="ثبت">
+          </div>
+      </div>
+
+
+
+  </form>
+
+
+
+</div>

@@ -1,0 +1,75 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Khula:400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<div class="container" data-view="viewmodels/home" data-active-view="true">
+  <div class="page-header" style="text-align: center; margin-bottom: 50px;margin-top: 50px;">
+    <h4>منوی شرکت پخش</h4>
+  </div>
+
+  <div class="row" >
+    <div class="col-md-5 menu" >
+      <a class="pointer" style="text-decoration: none;" data-bind="click: createAlbum">
+        <div class="thumbnail">
+          <br>
+          <p style="text-align: center">
+            <i class="fa fa-user fa-3x"></i>
+          </p>
+          <div class="caption" style="text-align: center;">
+            <h5>تنظیمات کاربری</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-5 menu">
+      <a class="pointer" data-bind="click: manageGalleries">
+        <div class="thumbnail">
+          <br>
+          <p style="text-align: center">
+            <i class="fa fa-credit-card fa-3x"></i>
+          </p>
+          <div class="caption" style="text-align: center;">
+            <h5>حساب بانکی</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-5 menu">
+      <a class="pointer" style="text-decoration: none;" data-bind="click: viewArchives">
+        <div class="thumbnail">
+          <br>
+          <p style="text-align: center">
+            <i class="fa fa-truck fa-3x"></i>
+          </p>
+          <div class="caption" style="text-align: center;">
+            <h5>تنظیمات ارسال</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-5 menu">
+      <a class="pointer" style="text-decoration: none;" data-bind="click: viewAnalytics">
+        <div class="thumbnail">
+          <br>
+          <p style="text-align: center">
+            <i class="fa fa-tag fa-3x"></i>
+          </p>
+          <div class="caption" style="text-align: center;">
+            <h5>قیمت گذاری محصولات</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<app-product-create></app-product-create>
+
+
+

@@ -1,0 +1,50 @@
+<div class="p-4">
+
+  <div class="auth-logo text-center mb-4"><img src="" alt=""></div>
+  <h1 class="mb-3 text-18">ثبت نام فروشگاه ها و مراکز فروش جز</h1>
+  <form (submit)="submitForm()">
+      <div class="form-group">
+          <label for="email">شماره موبایل</label>
+          <input type="text" class="form-control form-control-rounded" name="mobile"  [(ngModel)]="user.mobile">
+      </div>
+      <div class="form-group">
+          <label for="password">نام</label>
+          <input type="text" class="form-control form-control-rounded" name="firstName"  [(ngModel)]="user.firstName">
+      </div>
+      <div class="form-group">
+        <label for="password"> نام خانوادگی</label>
+        <input type="text" class="form-control form-control-rounded" name="lastName"  [(ngModel)]="user.lastName">
+    </div>
+    <div class="form-group">
+      <label for="password"> نام کسب و کار</label>
+      <input type="text" class="form-control form-control-rounded" name="jobName"  [(ngModel)]="user.jobName">
+    </div>
+    <div class="form-group">
+      <label for="password"> نوع کسب و کار</label>
+      <select class="form-control form-control-rounded"  name="jobCategory" [(ngModel)]="user.jobCategory" >
+
+        <option *ngFor="let city of cityList" style="font-weight: bolder" [value]="city.id">
+            {{city.title}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="password">شهر</label>
+      <select class="form-control form-control-rounded"  name="city" [(ngModel)]="user.city" >
+
+        <option *ngFor="let jobCategory of jobCategoryList" style="font-weight: bolder" [value]="jobCategory.id">
+            {{jobCategory.title}}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="password">آدرس</label>
+      <input type="text" class="form-control form-control-rounded" name="addr" type="text" [(ngModel)]="user.addr">
+    </div>
+
+      <button type="submit" class="btn btn-rounded btn-primary btn-block mt-2">ثبت نام</button>
+  </form>
+  <div class="mt-3 text-center">
+         <h6><b style="color: red;">ثبت نام در این بخش فقط مخصوص فروشگاه ها و کسب و کارهای فروش جز میباشد.شرکت های محترم پخش و بنک داران عزیر لطفا با ما تماس بگیرید</b></h6> </div>
+</div>

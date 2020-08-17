@@ -1,0 +1,71 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu+Condensed';
+//@import "~assets/css/nouislider.min.css";
+@import "../../../../assets/css/nouislider.min.css";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+
+}
+
+.social {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  box-shadow: 3px 3px 0 0px rgba(0, 0, 0, 0.25);
+  border-left: 5px solid black;
+}
+.active{
+
+  border-left: 5px solid #D10024;
+
+}
+
+nav {
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  //opacity: 0.7;
+  border-left: 5px solid #D10024;
+  box-shadow: 3px 3px 0 0px #D10024;
+}
+
+
+
+
+
+
+
+img{
+  width: 10%;
+  height: 100%;
+  margin-right: 0px;
+}

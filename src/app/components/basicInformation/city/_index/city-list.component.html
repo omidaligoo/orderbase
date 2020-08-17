@@ -1,0 +1,39 @@
+<p>city-list works!</p>
+<div class="container" dir="rtl">
+  <div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">نام شهر</th>
+
+
+                <th scope="col">وضعیت</th>
+                <th scope="col">عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let city of cityList; let i= index;">
+                <th scope="row">{{+i+1}}</th>
+                <td>{{city.title}}</td>
+
+
+                <ng-container *ngIf="city.status == true">
+                  <td><span class="badge badge-success">فعال</span></td>
+                </ng-container>
+
+                <ng-container *ngIf="city.status == false">
+                  <td><span class="badge badge-danger">غیر فعال</span></td>
+                </ng-container>
+                <td>
+                    <button class="btn btn-success" type="button" (click)="setOneStatusTrue(city)">فعال کردن </button>
+                    <button class="btn btn-danger" type="button" (click)="setOneStatusFalse(city)">غیر فعال کردن</button>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+  </div>
+</div>
+

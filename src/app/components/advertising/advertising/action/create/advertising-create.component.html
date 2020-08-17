@@ -1,0 +1,100 @@
+<div class="container" dir="rtl">
+  <form  (submit)="submitForm()">
+
+      <div class="row">
+
+          <div class="form-group col-md-12">
+              <label>عنوان: </label>
+              <input type="text" name="title"  class="form-control"  [(ngModel)]="advertising.title">
+          </div>
+
+          <div class="form-group col-md-12">
+            <label>توضیحات: </label>
+            <input type="text" name="description"  class="form-control" [(ngModel)]="advertising.description">
+          </div>
+
+
+
+          <div class="form-group col-md-12">
+            <label>تعداد نمایش: </label>
+            <input type="text" name="showCount"  class="form-control" [(ngModel)]="advertising.showCount">
+          </div>
+
+          <div class="form-group col-md-12">
+            <label>نوع تبلیغات را انتخاب نمایید:</label>
+            <select class="form-control"  name="adsType" [(ngModel)]="advertising.place">
+
+              <option value="HTMLLINK">صفحه وب</option>
+              <option value="MAINCATEGORY">دسته بندی اصلی</option>
+              <option value="SUBCATEGORY">دسته بندی فرعی</option>
+              <option value="PRODUCT">محصول</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label> دسته بندی اصلی را انتخاب نمایید: </label>
+            <select class="form-control"  name="mainCategory" [(ngModel)]="advertising.mainCategoryId" >
+
+              <option *ngFor="let mainCategory of mainCategoryList" style="font-weight: bolder" [value]="mainCategory.id">
+                  {{mainCategory.title}}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label> دسته بندی فرعی را انتخاب نمایید: </label>
+            <select class="form-control"  name="subCategory" [(ngModel)]="advertising.subCategoryId">
+
+              <option *ngFor="let subCategory of subCategoryList" style="font-weight: bolder" [value]="subCategory.id">
+                  {{subCategory.title}}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label>انتخاب محصول (فعلا راهکاری به ذهنم نرسیده)</label>
+            <select class="form-control"  name="product" >
+
+
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label>      شهر را انتخاب نمایید: </label>
+            <select class="form-control"  name="city" [(ngModel)]="advertising.cityList" >
+
+              <option *ngFor="let city of cityList" style="font-weight: bolder" [value]="city.id">
+                  {{city.title}}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label>محل تبلیغات را انتخاب نمایید:</label>
+            <select class="form-control"  name="adsPlace" [(ngModel)]="advertising.adsType"  >
+
+              <option value="MAINPAGE">صفحه وب</option>
+              <option value="MAINCATEGORY">دسته بندی اصلی</option>
+              <option value="SUBCATEGORY">دسته بندی فرعی</option>
+
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label> تصویر دسته بندی را انتخاب کنید: </label>
+            <input type="file" name="image" accept="image/*" class="form-control" (change)="onSelecetFile($event)">
+          </div>
+
+          <div class="form-group row">
+            <input type="submit" class="btn btn-success btn-block" value="ثبت">
+          </div>
+      </div>
+
+
+
+  </form>
+
+
+
+</div>
+<app-advertising-list [newAdvertising]=newAdvertising></app-advertising-list>

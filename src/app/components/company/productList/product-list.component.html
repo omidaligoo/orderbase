@@ -1,0 +1,67 @@
+<div class="container" dir="rtl">
+  <div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">نام محصول</th>
+                <th scope="col">توضیحات محصول</th>
+                <th scope="col"> حداقل قیمت</th>
+                <th scope="col"> حداکثر قیمت</th>
+                <th scope="col">حداقل سفارش </th>
+                <th scope="col"> دسته بندی اصلی</th>
+                <th scope="col"> زیر دسته بندی</th>
+                <th scope="col">تصویر</th>
+
+                <th scope="col">وضعیت</th>
+                <th scope="col">عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList; let i= index;">
+                <th scope="row">{{+i+1}}</th>
+                <td>{{product.title}}</td>
+                <td> {{product.description}}</td>
+                <td> {{product.minCost}}</td>
+                <td> {{product.maxCost}}</td>
+                <td> {{product.minOrder}}</td>
+                <td> {{product.mainCategory.title}}</td>
+                <td> {{product.subCategory.title}}</td>
+                <td>
+                  <img style="width: 60px;height: 60px;" src="{{imagePath+product.mainImage.id}}">
+                </td>
+
+
+                <ng-container *ngIf="product.status == true">
+                  <td><span class="badge badge-success">فعال</span></td>
+                </ng-container>
+
+                <ng-container *ngIf="product.status == false">
+                  <td><span class="badge badge-danger">غیر فعال</span></td>
+                </ng-container>
+
+                <!-- <td>
+                    <button class="btn btn-success" type="button" (click)="setOneStatusTrue(mainCategory)">فعال کردن </button>
+                    <button class="btn btn-danger" type="button" (click)="setOneStatusFalse(mainCategory)">غیر فعال کردن</button>
+                </td> -->
+            </tr>
+
+
+        </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col-md-8 text-center " style="text-align: center;margin: 0 auto;margin-bottom: 50px;">
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link"   (click)="getPrevPage()">قبلی</a></li>
+            <ng-container *ngFor="let item of items; let i= index;">
+              <li class="page-item"  [class.active]="item.name==pageActive"  ><a class="page-link" (click)="getCustomPage(item)">{{item.name}}</a></li>
+            </ng-container>
+            <li class="page-item"><a class="page-link" (click)="getNextPage()" >بعدی</a></li>
+        </ul>
+    </nav>
+    </div>
+
+  </div>
+</div>

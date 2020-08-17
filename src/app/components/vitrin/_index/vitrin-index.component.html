@@ -1,0 +1,26 @@
+<app-vitrin-navigation (outMainCategory)="parentMethod($event)"></app-vitrin-navigation>
+
+		<!-- SECTION -->
+		<div class="section" dir="rtl"  >
+			<!-- container -->
+			<div class="container" style="max-width: 1800px;" >
+				<!-- row -->
+				<div class="row">
+          <!-- ASIDE -->
+					<div id="aside" class="col-md-3">
+            <app-vitrin-aside [selectedMainCategory]="selectedMainCategory"></app-vitrin-aside>
+          </div>
+          <!-- /ASIDE -->
+					<!-- STORE -->
+					<div id="store" class="col-md-9">
+            <app-product-list></app-product-list>
+          </div>
+          <!-- /STORE -->
+
+
+        </div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->

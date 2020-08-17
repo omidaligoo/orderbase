@@ -1,0 +1,28 @@
+<p>create-city works!</p>
+<div class="container" dir="rtl">
+  <form  (submit)="submitForm()">
+
+      <div class="row">
+
+          <div class="form-group col-md-12">
+              <label> نام شهر را وارد کنید:</label>
+              <input type="text" name="title" class="form-control" [(ngModel)]="city.title">
+          </div>
+
+
+
+          <div class="form-group row">
+            <input type="submit" class="btn btn-success btn-block" value="ثبت">
+          </div>
+      </div>
+
+
+
+  </form>
+
+
+
+</div>
+
+
+<app-city-list [newCity]=newCity></app-city-list>
